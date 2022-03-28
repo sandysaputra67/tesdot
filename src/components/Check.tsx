@@ -74,7 +74,7 @@ const Check: FC = () => {
   };
 
   return (
-    <div className="max-w-lg border shadow-sm bg-slate-50 mx-auto mt-7 mb-7 p-5 rounded-lg">
+    <div className="max-w-lg border shadow-lg bg-slate-50 mx-auto my-7 p-5 rounded-lg">
       <form className="mt-5">
         <hr className="border border-black" />
         <div className="w-full bg-slate-200 p-2">
@@ -90,7 +90,7 @@ const Check: FC = () => {
           name="prov1"
           id="prov1"
           onChange={(e) => getCity1(e.target.value)}
-          className="w-full h-9 border border-slate-500 rounded-lg p-1"
+          className="w-full h-9 border border-slate-500 rounded-lg pl-2"
         >
           <option value="">-- Pilih Provinsi --</option>
           {provinces.map((item) => (
@@ -106,7 +106,7 @@ const Check: FC = () => {
           name="kot1"
           id="kot1"
           onChange={(e) => valAsal(e.target.value)}
-          className="w-full h-9 border border-slate-500 rounded-lg mb-5 p-1"
+          className="w-full h-9 border border-slate-500 rounded-lg mb-5 pl-2"
         >
           <option value="">-- Pilih kota --</option>
           {cities1.map((item) => (
@@ -129,7 +129,7 @@ const Check: FC = () => {
           name="prov2"
           id="prov2"
           onChange={(e) => getCity2(e.target.value)}
-          className="w-full h-9 border border-slate-500 rounded-lg p-1"
+          className="w-full h-9 border border-slate-500 rounded-lg pl-2"
         >
           <option value="">-- Pilih provinsi --</option>
           {provinces.map((item) => (
@@ -145,7 +145,7 @@ const Check: FC = () => {
           name="kot2"
           id="kot2"
           onChange={(e) => valTujuan(e.target.value)}
-          className="w-full h-9 border border-slate-500 rounded-lg mb-1 p-1"
+          className="w-full h-9 border border-slate-500 rounded-lg mb-1 pl-2"
         >
           <option value="">-- Pilih Kota --</option>
           {cities2.map((item) => (
@@ -162,7 +162,7 @@ const Check: FC = () => {
           name="berat"
           id="berat"
           onChange={(e) => valBerat(e.target.value)}
-          className="w-full h-9 border border-slate-500 rounded-lg mb-1 p-1"
+          className="w-full h-9 border border-slate-500 rounded-lg mb-1 pl-2"
         />
         <label className="text-m text-red-900 mt-1 mb-1" htmlFor="kurir">
           Kurir
@@ -171,7 +171,7 @@ const Check: FC = () => {
           id="kurir"
           name="kurir"
           onChange={(e) => valKurir(e.target.value)}
-          className="w-full h-9 border border-slate-500 rounded-lg mb-5 p-1"
+          className="w-full h-9 border border-slate-500 rounded-lg mb-5 pl-2"
         >
           <option value="">-- Pilih layanan --</option>
           <option value="jne">JNE</option>
