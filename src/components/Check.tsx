@@ -67,7 +67,6 @@ const Check: FC = () => {
     try {
       const resp = await API.get(`ongkos/${asal}/${tujuan}/${berat}/${kurir}`);
       setCostList(resp.data.rajaongkir.results[0].costs);
-      console.log(resp.data.rajaongkir.results[0].costs);
     } catch (err) {
       console.log(err);
     }
