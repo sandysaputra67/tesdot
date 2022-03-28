@@ -2,6 +2,7 @@ import { API } from "../config/api";
 import { useState, useEffect, FC, SyntheticEvent } from "react";
 import ProvinceData from "../types/prov";
 import CityData from "../types/city";
+import { convertToRupiah } from "../utils/rupiah";
 
 type CostData = {
   service: string;
@@ -195,7 +196,7 @@ const Check: FC = () => {
               <div>
                 <div className="flex flex-column justify-between">
                   <b className="text-red-900">{item.service}</b>
-                  <i>Rp. {item.cost[0].value}</i>
+                  <i>{convertToRupiah(item.cost[0].value)}</i>
                 </div>
               </div>
             </div>
