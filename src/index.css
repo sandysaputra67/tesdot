@@ -15,3 +15,12 @@ code {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .input-section {
+    @apply w-full h-9 border border-slate-500 rounded-lg pl-2;
+  }
+  .label-section {
+    @apply text-base text-red-900 mt-1 mb-1;
+  }
+}

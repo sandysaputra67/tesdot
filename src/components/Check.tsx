@@ -90,7 +90,7 @@ const Check: FC = () => {
           name="prov1"
           id="prov1"
           onChange={(e) => getCity1(e.target.value)}
-          className="w-full h-9 border border-slate-500 rounded-lg pl-2"
+          className="input-section"
         >
           <option value="">-- Pilih Provinsi --</option>
           {provinces.map((item) => (
@@ -99,14 +99,14 @@ const Check: FC = () => {
             </option>
           ))}
         </select>
-        <label htmlFor="kot1" className="text-m text-red-900 mt-1 mb-1">
+        <label htmlFor="kot1" className="label-section">
           Pilih Kota
         </label>
         <select
           name="kot1"
           id="kot1"
           onChange={(e) => valAsal(e.target.value)}
-          className="w-full h-9 border border-slate-500 rounded-lg mb-5 pl-2"
+          className="input-section"
         >
           <option value="">-- Pilih kota --</option>
           {cities1.map((item) => (
@@ -115,7 +115,7 @@ const Check: FC = () => {
             </option>
           ))}
         </select>
-        <hr className="border border-black" />
+        <hr className="border border-black mt-5" />
         <div className="w-full bg-slate-200 p-2">
           <p className="text-2xl text-red-900 font-semibold mt-1 mb-1">
             Kota Tujuan
@@ -129,7 +129,7 @@ const Check: FC = () => {
           name="prov2"
           id="prov2"
           onChange={(e) => getCity2(e.target.value)}
-          className="w-full h-9 border border-slate-500 rounded-lg pl-2"
+          className="input-section"
         >
           <option value="">-- Pilih provinsi --</option>
           {provinces.map((item) => (
@@ -138,7 +138,7 @@ const Check: FC = () => {
             </option>
           ))}
         </select>
-        <label htmlFor="kot2" className="text-m text-red-900 mt-1 mb-1">
+        <label htmlFor="kot2" className="label-section">
           Pilih Kota
         </label>
         <select
@@ -154,7 +154,7 @@ const Check: FC = () => {
             </option>
           ))}
         </select>
-        <label className="text-m text-red-900 mt-1 mb-1" htmlFor="berat">
+        <label className="label-section" htmlFor="berat">
           Berat (gram)
         </label>
         <input
@@ -162,9 +162,10 @@ const Check: FC = () => {
           name="berat"
           id="berat"
           onChange={(e) => valBerat(e.target.value)}
+          placeholder="Berat kiriman"
           className="w-full h-9 border border-slate-500 rounded-lg mb-1 pl-2"
         />
-        <label className="text-m text-red-900 mt-1 mb-1" htmlFor="kurir">
+        <label className="label-section" htmlFor="kurir">
           Kurir
         </label>
         <select
