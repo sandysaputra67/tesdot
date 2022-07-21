@@ -5,7 +5,7 @@ import "./App.css";
 function App() {
   return (
     <div>
-      <Header title="Cek Ongkir: React TS with TailWind CSS" />
+      <Header title="cek ongkir" />
       <Check />
     </div>
   );
